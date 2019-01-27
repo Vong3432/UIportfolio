@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+*,::before,::after
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: PT Sans;
+    font-style: normal;
+    /* font-weight: bold; */
+    line-height: normal;
+}
+
+body
+{        
+    display: grid;    
+    
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row dense; 
+    grid-template-rows: 69px minmax(60vh,1fr) minmax(298px,1fr)  minmax(298px,1fr)  minmax(298px,1fr) 323px 323px 323px minmax(auto-fill,1fr);     
+    grid-template-areas: "nav nav nav nav"
+                         "hero hero hero hero"
+                         " a a a a "
+                         "category category category category"
+                         "category2 category2 category2 category2"
+                         "more more more more"
+                         "footer footer footer footer";
+    justify-content: center;
+    align-items: center;
+    text-align: center;        
+    align-content: center;
+    justify-items: center;                         
+}
+
+
+nav{
+    
+    grid-area: nav;        
+    padding: 10px;
+    width: 100%;
+    height: 69px;
+   
+   
+    background: linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 100%);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+nav a
+{
+    padding: 0 3vh;
+    text-decoration: none;
+    color: rgba(140, 164, 186, 0.62);
+    font-size: 17px;
+}
+
+nav #active
+{
+    font-weight: bold;
+    color: #1D8BF1;    
+}
+
+nav .title
+{    
+    color: #1D8BF1;   
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+.hero-section
+{
+    grid-area: hero;
+    position: relative;   
+    top: 0;
+    left: 0; 
+    width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(0deg, rgba(25, 101, 172, 0.78), rgba(28, 114, 194, 0.78)), url('images/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+.hero--content
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.hero-title
+{
+    font-size: 4em;    
+    font-weight: bold;
+    font-family: PT Sans;
+    font-style: normal;
+}
+
+.hero-p
+{
+    padding: 3vh 0;
+    max-width: 500px;    
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: PT Sans;    
+    line-height: 1.6;
+}
+.section--title
+{    
+    font-size: 3em;
+    color: #1D8BF1;
+    font-weight: bold;
+}
+
+.section--p
+{
+    padding-top: 30px;
+    color: #88949F;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.criteria-section
+{
+    grid-area: a;
+    display: flex;
+    
+    flex-flow: row wrap;
+    padding: 0 5vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.first-section
+{
+   /* grid-area: first;   
+     border-right: 2px solid  #9EC1E3;  */    
+}
+
+
+.second-section
+{
+     /* grid-area: second;   */
+     border-left: 2px solid  #9EC1E3;    
+}
+
+.first-section,.second-section
+{        
+    margin: 50px 0;    
+    padding: 20vh 10vh; 
+    /* max-width: 1000px;
+    width: 100%; */
+    max-width: 600px;
+    
+    font-weight: bold;
+}
+
+.clothes-section
+{
+    padding: 10vh 5vh;
+    grid-area: category;
+    background: rgba(158, 193, 227, 0.1);
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;    
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+
+.category-content
+{
+    max-width: 700px;
+    text-align: center;
+    padding: 5vh 10vh;
+    font-weight: bold;
+}
+
+.clothes-section img
+{
+    max-width: 600px;
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.15);
+    height: 100%;
+}
+
+.category-content button
+{
+    background: #1D8BF1;
+    max-width: 150px;    
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
+
+.technology-section
+{
+    grid-area: category2;
+    width: 100%;
+    padding: 10vh 5vh;        
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-content: center;
+    justify-content: center;    
+    justify-items: center;
+    align-items: center;
+    background: rgba(136, 179, 210, 0.21);
+}
+
+.technology-section img
+{
+    max-width: 600px;
+    width: 100%;
+    object-fit: contain;
+    max-height: 400px;    
+    height: 100%;
+}
+
+.last-section
+{
+    position: relative;
+    grid-area: more;   
+    margin-top: 100px; 
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.last-section .category-content
+{
+    max-width: 900px;
+}
+
+.last-section .category-content button
+{
+    margin-top: 70px;
+    max-width: 200px;
+    height: 50px;
+}
+
+.last-section img
+{    
+ 
+    margin-top: 50px;
+    max-width: 100%;
+    width: 100%;
+    max-height:400px;
+    height: 100%;
+    z-index: 2;
+    object-fit: cover;
+    
+}
+
+footer
+{
+    grid-area: footer;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.67);
+    font-weight: bold;
+    padding: 2vh 0;
+}
+
+@media screen and (max-width:1280px){
+    .first-section,.second-section
+    {
+        padding: 0 0;
+        padding-top: 5vh;
+    }
+
+    .second-section{
+        border-left: none;
+        padding-bottom: 5vh;
+    } 
+
+}
+
+@media screen and (max-width:600px)
+{
+
+    body{
+        
+    }
+       
+    nav a:not(:first-child){
+        display: none;
+    }
+
+    .criteria-section
+    {
+        padding: 0 0;
+    }
+    
+    .category-content{
+        padding: 5vh 5vh;
+    }
+
+    .last-section img{
+        margin-top: 0;
+    }
+    
+}
