@@ -87,7 +87,7 @@ body{
     padding: 3vh 7vh;
     position: relative;
     min-height: 30vh;
-    margin-top: -180px;
+    margin-top: -150px;
 }
 
 #avatar
@@ -114,7 +114,7 @@ body{
 
 .name
 {
-    margin-top: 50px;
+    
     font-weight: bold;
     font-size:2rem;   
     height: 50px; 
