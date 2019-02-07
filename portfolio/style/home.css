@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 100px 300px 300px 300px minmax(300px,1fr);
+    grid-template-areas: "nav nav nav nav nav"
+                         "hero hero hero hero hero"
+                         "... introduce introduce introduce ..."
+                         "... about about about ..."
+                         "skills skills skills skills skills";
+    
+    align-content: center;     
+    justify-items: center;
+    align-items: center;    
+    
+}
+
+.topnav
+{
+    padding: 5vh 0;
+    grid-area: nav;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.topnav a
+{
+    padding: 0 3vh;
+    color:  rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+}
+
+#active
+{
+    color: black;
+    font-weight: bold;
+}
+
+.hero-section
+{
+    grid-area: hero;
+    width: 100%;    
+    height: 300px;    
+    background: url('/portfolio/images/herobg.jpg'), rgba(196, 196, 196, 0.2);
+    background-position: center;
+    background-size: cover;
+    position: relative;    
+}
+
+.hero__button
+{
+    background-color: #FF6469;
+    border: none;
+    outline: none;
+    width: 25vh;
+    height: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.first-section
+{
+    grid-area: introduce;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;    
+    padding: 3vh 7vh;
+    position: relative;
+    min-height: 30vh;
+    margin-top: -180px;
+}
+
+#avatar
+{
+    width: 232px;
+    height: 232px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#social__icons
+{
+    padding: 0.5vh;
+    width: 35px;
+    height: 35px;
+}
+
+.first-section .first__information
+{        
+    padding: 5vh;
+    text-align: center;
+}
+
+.name
+{
+    font-weight: bold;
+    font-size:2rem;   
+    height: 50px; 
+}
+
+.education
+{
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1vh 0;
+    height: 50px;
+    font-size: 1.4rem;
+}
+
+.about-section 
+{
+    grid-area: about;
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;    
+    min-height: 30vh;
+    text-align: center;
+    
+    padding: 3vh 7vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-section h3
+{
+    font-weight: 600;
+    
+    height: 100px;
+    font-size: 2.5rem;
+}
+
+.about-section p
+{
+    max-width: 1000px;
+    color:rgba(0, 0, 0, 0.7);
+    padding: 0 5vh;
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+@media screen and ( max-width:900px )
+{
+    .first-section .first__information
+    {
+        width: 600px;
+    }
+
+    .first-section
+    {
+        margin-top: 0;
+    }
+
+    .about-section
+    {
+        margin-top: 200px;
+    }
+}
+
+@media screen and ( max-width:600px )
+{
+    .name
+    {
+        font-size: 1.6rem;        
+    }
+
+    .education,.about-section p
+    {
+        font-size: 1.1rem;
+    }    
+    
+
+    .about-section p,.first-section .first__information
+    {
+        padding: 0;
+    }
+
+    .first-section .first__information,.about-section h3
+    {
+        padding-top: 3vh;
+    }
+}
