@@ -54,7 +54,7 @@ body{
     grid-area: hero;
     width: 100%;    
     height: 300px;    
-    background: url('/portfolio/images/herobg.jpg'), rgba(196, 196, 196, 0.2);
+    background: url('https://vong3432.github.io/UIportfolio/portfolio/images/herobg.jpg'), rgba(196, 196, 196, 0.2);
     background-position: center;
     background-size: cover;
     position: relative;    
