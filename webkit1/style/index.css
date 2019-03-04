@@ -42,8 +42,14 @@ a{text-decoration: none;}
 {    
     color: rgba(255, 255, 255, 0.59);
     padding: 0vh 2vh;
-    font-size: 1.2rem;
-    
+    font-size: 1.2rem;    
+    transition: color 300ms ease-in-out;
+    font-weight: bold;
+}
+
+.top-nav a:hover
+{
+    color: #fff;   
 }
 
 #logo
@@ -69,7 +75,9 @@ a{text-decoration: none;}
     width: 100%;
     min-height: inherit;
     height: 100%;    
-    background: linear-gradient(236.14deg, #6281EB 17.38%, rgba(120, 66, 236, 0.82) 57.37%, rgba(120, 66, 236, 0.74) 80.73%);
+    /* background: linear-gradient(236.14deg, #6281EB 17.38%, rgba(120, 66, 236, 0.82) 57.37%, rgba(120, 66, 236, 0.74) 80.73%); */
+    /* background: linear-gradient(236.14deg, #6281EB 17.38%, rgba(96, 127, 238, 0.86) 60.51%, rgba(139, 89, 245, 0.74) 80.73%); */
+    background: linear-gradient(232.06deg, rgba(145, 63, 227, 0.86) -17.27%, rgba(57, 199, 208, 0.88) 99.98%);
 }
 
 .hero-section
@@ -97,7 +105,9 @@ a{text-decoration: none;}
 
 .hero-section .hero--content p
 {
-    color: rgba(255, 255, 255, 0.59);
+    /* color: rgba(255, 255, 255, 0.753); */
+    color: rgba(255, 255, 255, 0.8);
+    /* font-weight: bold;     */
     text-align: justify;
     padding: 3vh 0;
     font-size: 1.2rem;
@@ -106,9 +116,12 @@ a{text-decoration: none;}
 .hero-section .hero--content input[type="text"]
 {
     padding: 1vh 3vh;
-    border-radius: 5px;
-    width: 200px;
+    border-radius: 2px;
+    width: 250px;
     height: 40px;
+    background-color: #fff;
+    outline: none;
+    border: none;
 }
 
 .hero-section .hero--content button
@@ -122,6 +135,13 @@ a{text-decoration: none;}
     border-radius: 5px;
     color: inherit;
     height: 40px;
+    transition: background-color 300ms ease-in-out;
+}
+
+.hero-section .hero--content button:hover
+{
+    cursor: pointer;
+    background-color: rgba(66, 53, 207, 0.7);
 }
 
 .hero-section .hero--image::before
@@ -141,7 +161,7 @@ a{text-decoration: none;}
 .hero-section .hero--image
 {
     position: relative;
-    max-width: 800px;
+    max-width: 700px;
     padding: 2vh 3vh;
 }
 
@@ -167,6 +187,46 @@ a{text-decoration: none;}
     object-fit: cover;
 }
 
+.intro-section
+{       
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    padding: 5vh 0;    
+}
+
+.intro-section .container
+{
+    justify-content: space-around;
+    /* flex-flow: row nowrap;     */
+}
+
+.card
+{
+    margin: 2vh 0;
+    text-align: center;
+}
+
+.card p
+{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card h2
+{
+    color: #4235CF;
+    font-size: 2rem;
+    margin: 2vh 0;
+}
+
+.card img
+{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
 @media screen and ( max-width: 1200px )
 {
     .container
@@ -189,7 +249,13 @@ a{text-decoration: none;}
     .hero-section .hero--content p
     {
         font-size: 1.5rem;
-        text-align: center;
+        margin: 2vh 0;
+        /* text-align: center;         */
+    }
+
+    .hero-section .hero--content button
+    {
+        margin: 5vh 0;
     }
 
     .hero-section .align-right
@@ -216,7 +282,7 @@ a{text-decoration: none;}
     }
 
     .hero-section .hero--content p
-    {
+    {        
         font-size: 1rem;
         line-height: 1.6;
     }
