@@ -181,7 +181,14 @@ a{text-decoration: none;}
 
     .hero-section .hero--content
     {
-        margin-top: 15vh;
+        margin-top: 20vh;
+        text-align: center;
+    }
+
+    .hero-section .hero--content p
+    {
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     .hero-section .align-right
@@ -205,6 +212,12 @@ a{text-decoration: none;}
     .hero-section .hero--content h1
     {
         font-size: 3rem;
+    }
+
+    .hero-section .hero--content p
+    {
+        font-size: 1rem;
+        line-height: 1.6;
     }
 
     .hero-section .hero--image::after, .hero-section .hero--image::before
