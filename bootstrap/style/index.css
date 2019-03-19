@@ -1,14 +1,14 @@
 @font-face
 {
     font-family: sourcesanspro;    
-    src: url(/fonts/SourceSansPro-Regular.ttf);
+    src: url(../fonts/SourceSansPro-Regular.ttf);
     font-weight: normal;
 }
 
 @font-face
 {
     font-family: sourcesanspro;    
-    src: url(/fonts/SourceSansPro-Bold.ttf);
+    src: url(../fonts/SourceSansPro-Bold.ttf);
     font-weight: bold;
 }
 
@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5,h6
     width: 100%;
     min-height: 50vh;
     position: relative;
-    background-image: url('/images/thumbnail.jpg');
+    background-image: url('../images/thumbnail.jpg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -145,6 +145,7 @@ h1,h2,h3,h4,h5,h6
     opacity: 0.7;
     transition: opacity 300ms ease-in-out;
 }
+
 
 .thread-section
 {
