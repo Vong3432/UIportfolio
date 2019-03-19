@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column">
+
+    <!-- thumbnail -->
+    <div class="thumbnail-section">
+        <!-- <img src="images/thumbnail.jpg" class="img-fluid" alt="thumbnail"> -->
+      
+    
+    <div class="profile-section">
+
+        <div class="container px-5 py-sm-5 py-md-5 py-lg-2 py-5">
+
+           <div class="row align-items-center text-white">
+
+                <!-- <div class="col-12 col-md-12 col-lg-2 pt-lg-0 pt-sm-5">
+                    <img src="images/profile.jpg" alt="profileimg" class="profile__img mx-md-auto">
+                </div> -->
+
+                <img src="images/profile.jpg" alt="profileimg" class="profile__img mx-auto ml-lg-3">
+
+                <div class="col-12 col-md-12 col-lg-3 mt-2 text-md-center text-center text-lg-left">
+                    <h2 class="text-nowrap">John Doe</h2>
+                    <p>Software Engineer</p>                    
+                </div>
+
+                <div class="col-12 ml-auto col-md-12  col-lg-6 pb-0 pt-2 text-md-center text-center text-lg-right">
+                    <blockquote class="blockquote">
+                        <p>Always practice to become perfect.</p>
+                    </blockquote>
+                    <!-- <img src="images/facebook.svg" alt="social" class="profile__social-icons">
+                    <img src="images/instagram.svg" alt="social" class="profile__social-icons"> -->
+                </div>
+
+           </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div class="function-section">
+
+        <div class="container px-5 py-sm-4 py-5">
+            <div class="row align-items-center">
+
+                <div class="col-12 col-lg-1 col-md-4 function-tabs my-1">
+                    <div class="card p-2">
+                        <img src="images/speech-bubble.svg" class="mx-auto my-1 card-img-top" alt="message">
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-1 col-md-4 function-tabs my-1">
+                    <div class="card p-2">
+                        <img src="images/users.svg" class="mx-auto my-1 card-img-top" alt="about">
+                        
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-1 col-md-4  function-tabs my-1" id="gallery">
+                    <div class="card p-2">
+                        <img src="images/gallery.svg" class="mx-auto my-1 card-img-top" alt="gallery">                        
+                    </div>
+                </div>    
+
+                <button type="button" class="btn btn-primary mx-md-auto mx-auto mr-lg-0 mt-3" id="addButton">Add as friend</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="thread-section">
+
+        <div class="container px-5 py-sm-4 py-5">
+
+            <div class="row align-items-start mt-5">
+
+                <div class="col-lg-8 col-md-8">
+
+                    <div class="card mb-2">
+                        <div class="card-body">
+                            <h4 class="text-primary">John Doe</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem recusandae ad. Quod impedit, asperiores velit, dolorum consectetur mollitia cum placeat, doloribus reprehenderit voluptas hic cumque suscipit. Nostrum, incidunt quae.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-2">
+                            <div class="card-body">
+                                <h4 class="text-primary">John Doe</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem recusandae ad. Quod impedit, asperiores velit, dolorum consectetur mollitia cum placeat, doloribus reprehenderit voluptas hic cumque suscipit. Nostrum, incidunt quae.</p>
+                            </div>
+                        </div>
+
+                        <div class="card mb-2">
+                                <div class="card-body">
+                                    <h4 class="text-primary">John Doe</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos rem recusandae ad. Quod impedit, asperiores velit, dolorum consectetur mollitia cum placeat, doloribus reprehenderit voluptas hic cumque suscipit. Nostrum, incidunt quae.</p>
+                                </div>
+                            </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4" id="galleryPos">
+
+                        <div class="card p-2 mb-2">
+                            <img src="images/p1.jpg" class="card-img-top card-thread-img" alt="p1">
+                            <div class="card-body px-2 py-4">                    
+                                <small class="text-black-50">Photo by Angelo Pantazis on Unsplash</small>            
+                                <p class="card-text">Such a nice experience !</p>                                
+                            </div>
+
+                        </div>
+
+                        <div class="card p-2 mb-2">
+                                <img src="images/p2.jpg" class="card-img-top card-thread-img" alt="p2">
+                                <div class="card-body px-2 py-4">                       
+                                        <small class="text-black-50">Photo by Daniel Seßler on Unsplash</small>            
+                                    <p class="card-text">Such a nice experience !</p>
+                                </div>
+    
+                        </div>
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="mt-auto d-none">
+        <h3>Special thanks to : </h3>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
+
+<!-- scripts -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/index.js"></script>
+</body>
+</html>

@@ -1,28 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
 *,::before,::after
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Nunito', sans-serif;
 }
 
 a{text-decoration: none;}
-
-
-.container
-{    
-    /* background-color: black; */
-    max-width: 1400px;
-    width: 100%;
-    margin: 0 auto;   
-    display: flex;
-    flex-flow: row nowrap;
-    justify-items: center;    
-    align-items: center; 
-    justify-content: center;  
-    min-height: inherit;
-    padding: 1vh 15vh;
-}
 
 #main
 {
@@ -32,37 +19,69 @@ a{text-decoration: none;}
     
 }
 
-
-.align-right
-{
-    margin-left: auto;
+.container
+{    
+    /* background-color: black; */
+    max-width: inherit;
+    width: 100%;
+    margin: 0 auto;   
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-items: center;    
+    align-items: center; 
+    justify-content: center;  
+    min-height: inherit;
+    padding: 2vh 5vh;
+    /* background-color: red; */
 }
 
 .main-nav
 {    
     position: absolute;
+    background-color: #e8ecf1;
     top: 0;
     z-index: 99;
-    width: 100%;
-    padding: 3vh 0;    
-    
+    max-width: 100%;
+    width: 100%;     
+    /* grid-area: nav;     */    
 }
+
 
 .main-nav a
 {    
     color: #4235CF;
-    padding: 0vh 2vh;
-    font-size: 1.2rem;    
+    padding: 1vh 2vh;
+    font-size: 1.1rem;    
     transition: color 300ms ease-in-out;
     /* font-weight: bold; */
 }
 
+
+.align-right
+{         
+    display: inherit;    
+    align-content: inherit;
+    justify-items: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    margin-left: auto;
+}
+
 .main-nav img
-{
-    width: 25px;
-    height: 25px;
+{    
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.signIn-btn
+{
+    background-color: #4235CF;
+    color: #fff !important;
+    border-radius: 5px;           
 }
 
 .sidebar
