@@ -17,6 +17,7 @@ function scrollTo(element){
 
 
 addFriendBtn.addEventListener('click',()=>{
+    
     if(status === false )
     {
         addFriendBtn.innerText = "Sent";
@@ -26,7 +27,7 @@ addFriendBtn.addEventListener('click',()=>{
 
     else
     {
-        addFriendBtn.innerText = "Add friend";
+        addFriendBtn.innerText = "Add as friend";
         addFriendBtn.style.opacity = 1;
         status = false;
     }

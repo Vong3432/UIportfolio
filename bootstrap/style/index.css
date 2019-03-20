@@ -50,7 +50,8 @@ p,a,span
 {
     /* font-family: sourcesanspro !important; */
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-    font-family: 'Open Sans', sans-serif !important;
+    /* font-family: 'Open Sans', sans-serif !important; */
+    font-family: sourcesanspro;
     font-weight: normal;
 }
 
@@ -195,19 +196,59 @@ h1,h2,h3,h4,h5,h6
     font-weight: bold;
 }
 
-.thread-section .card
-{
-    cursor: pointer;
-}
-
-.thread-section .card:hover .card-body
+.thread-section h4:hover,.thread-section p:hover,.likeBtn:hover,.commentBtn:hover,.donateBtn:hover
 {
     opacity: 0.7;
     transition: opacity 300ms ease-in-out;
 }
 
+.thread-section .card
+{
+    cursor: pointer;
+}
+
+
 .card-thread-img:hover
 {
     opacity: 0.7;
+    transition: opacity 300ms ease-in-out;
+}
+
+.small-profileImage
+{
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.thread-section .media-body img
+{
+    max-width: 800px;
+    max-height: 400px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.thread-section .action-tabs
+{
+    font-size: 1.1em;
+    /* background-color: red; */
+}
+
+.thread-section .action-tabs div
+{
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.thread-section .action-tabs div:hover
+{
+    opacity: 1;
+    color: #fff;
+    background-color: #007bff !important;
     transition: opacity 300ms ease-in-out;
 }
