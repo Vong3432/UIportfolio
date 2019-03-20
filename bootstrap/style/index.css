@@ -223,7 +223,7 @@ h1,h2,h3,h4,h5,h6
     height: 100%;
 }
 
-.thread-section .media-body img
+.thread-section .card-body .thread-image
 {
     max-width: 800px;
     max-height: 400px;
