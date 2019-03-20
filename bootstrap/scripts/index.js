@@ -113,10 +113,10 @@ function createNewPost(text, image)
     
     postBody.appendChild(combineUserInfo(userProfileImg,theUsername));
     postBody.appendChild(postBodyParagraph);
-    postBody.appendChild(postBodyImage);
-    postBody.appendChild(actionTabsOfPost());
+    postBody.appendChild(postBodyImage);    
 
     newPost.appendChild(postBody);
+    newPost.appendChild(actionTabsOfPost());
     document.getElementById('threads').appendChild(newPost);
 
 }
@@ -124,21 +124,21 @@ function createNewPost(text, image)
 function actionTabsOfPost()
 {
     let container = document.createElement('div');
-    container.className = "container mx-auto mt-3";
+    container.className = "container mx-auto my-3";
 
     let row = document.createElement('div');
     row.className = "row action-tabs";
 
     let likeTab = document.createElement('div');
-    likeTab.className = "col-12 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2";
+    likeTab.className = "col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2";
     likeTab.innerText = "Like";
 
     let commentTab = document.createElement('div');
-    commentTab.className = "col-12 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2";
+    commentTab.className = "col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2";
     commentTab.innerText = "Comment";
 
     let donateTab = document.createElement('div');
-    donateTab.className = "col-12 col-md-4 col-lg-3 mx-auto bg-self-secondary text-center text-white py-2 my-2";
+    donateTab.className = "col-10 col-md-4 col-lg-3 mx-auto bg-self-secondary text-center text-white py-2 my-2";
     donateTab.innerText = "Donate";
     
     row.appendChild(likeTab);
