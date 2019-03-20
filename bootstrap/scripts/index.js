@@ -3,7 +3,7 @@
 const galleryTab = document.getElementById('gallery');
 const addFriendBtn = document.getElementById('addButton');
 const theUsername = "John Doe";
-const userProfileImg = "../images/profile.jpg";
+const userProfileImg = "images/profile.jpg";
 
 let galleryPosition = document.getElementById('galleryPos');
 let status = false;
