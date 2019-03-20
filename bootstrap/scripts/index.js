@@ -46,7 +46,7 @@ $(window).scroll(function(){
     // profile.id = 'profileIMG'
     // profile.src = '../images/profile.jpg';
     // profile.className = 'profile__img';
-    let profile = createSmallProfile('profileIMG','../images/profile.jpg','profile__img');
+    // let profile = createSmallProfile('profileIMG','../images/profile.jpg','profile__img');
 
     if( hitpoint > document.getElementById('functionTabs').offsetTop + 150)
     {
