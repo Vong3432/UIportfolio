@@ -5,11 +5,11 @@ const addFriendBtn = document.getElementById('addButton');
 const theUsername = "John Doe";
 const userProfileImg = "images/profile.jpg";
 
-let galleryPosition = document.getElementById('galleryPos');
+let galleryPosition = document.getElementById('galleryRow');
 let status = false;
 
 galleryTab.addEventListener('click',()=>{
-    scrollTo(galleryPosition)
+    scrollTo(galleryRow)
 });
 
 function scrollTo(element){
@@ -149,3 +149,24 @@ function actionTabsOfPost()
 
     return container;
 }
+
+
+
+document.getElementById('galleryRow').onclick = e =>
+{    
+    
+    let target = e.target;   
+    let galleryCard,paragraph,imageSrc = "";
+
+    galleryCard = target.closest('div');
+
+    if( galleryCard )
+    {
+        paragraph = galleryCard.querySelector("p").textContent;
+        imageSrc = ( !imageSrc ) ? galleryCard.closest(".card-thread-img") : galleryCard.querySelector("img");
+    }
+
+    console.log(galleryCard)
+    console.log(paragraph)
+    console.log(imageSrc);
+};
