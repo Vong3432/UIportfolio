@@ -151,10 +151,8 @@ function actionTabsOfPost()
 }
 
 
-
 document.getElementById('galleryRow').onclick = e =>
-{    
-    
+{        
     let target = e.target;   
     let galleryCard,paragraph,imageSrc = "";
 
@@ -162,10 +160,16 @@ document.getElementById('galleryRow').onclick = e =>
 
     if( galleryCard )
     {
-        paragraph = galleryCard.querySelector("p").textContent;
-        imageSrc = ( !imageSrc ) ? galleryCard.closest(".card-thread-img") : galleryCard.querySelector("img");
-    }
+        paragraph = galleryCard.querySelector("p").textContent;        
+        
+        if( imageSrc = galleryCard.querySelector("img") )
+            imageSrc = galleryCard.querySelector("img").src;
 
+        else
+            imageSrc = galleryCard.parentNode.querySelector("img").src;
+        
+    }        
+    
     console.log(galleryCard)
     console.log(paragraph)
     console.log(imageSrc);
