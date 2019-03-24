@@ -1,5 +1,5 @@
 
-
+const signupButton = document.getElementById('signup-btn');
 const galleryTab = document.getElementById('gallery');
 const addFriendBtn = document.getElementById('addButton');
 const theUsername = "John Doe";
@@ -7,6 +7,10 @@ const userProfileImg = "images/profile.jpg";
 
 let galleryPosition = document.getElementById('galleryRow');
 let status = false;
+
+signupButton.addEventListener('click',()=>{
+    window.location.assign('signup.html');
+})
 
 galleryTab.addEventListener('click',()=>{
     scrollTo(galleryRow)
@@ -174,3 +178,4 @@ document.getElementById('galleryRow').onclick = e =>
     console.log(paragraph)
     console.log(imageSrc);
 };
+
