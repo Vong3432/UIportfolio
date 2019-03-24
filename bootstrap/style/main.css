@@ -79,7 +79,19 @@ h1,h2,h3,h4,h5,h6
 {    
     /* background: red;     */
     width: 100%;
-    margin-top: 200px;    
+    margin-top: 100px;    
+}
+
+.main-section,.describe-section
+{
+    font-size: 1.2em;
+    min-height: 30vh;
+}
+
+.describe-section .leftImage
+{
+    width: auto;
+    max-height: 600px;
 }
 
 .main__left__heading
@@ -88,4 +100,18 @@ h1,h2,h3,h4,h5,h6
     font-weight: bold;
     font-size: 5rem;    
     line-height: 1.6;
+}
+
+.main__right__heading
+{
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;    
+    line-height: 1.6;
+}
+
+.slogan--secondary
+{
+    color: #e91e63;
+    font-size: 1.3em;    
 }
