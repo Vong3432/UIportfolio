@@ -27,8 +27,8 @@ $(window).scroll(function(){
 
     if( hitpoint > document.getElementById('describeSection').offsetTop )
     {
-        // $('#functionTabs').addClass('sticky-top');
-        $('.navbar').addClass('sticky-top');
+        // $('#functionTabs').addClass('sticky-top');  
+        $('.navbar').addClass('sticky-top');                   
         $('.describe-section').animate({
             "opacity":"1"
         },1500)
@@ -41,7 +41,7 @@ $(window).scroll(function(){
     {
         // $('#functionTabs .container').removeClass('py-sm-2');
         // $('#functionTabs .container').addClass('py-sm-4');
-        $('.navbar').removeClass('sticky-top');
+        $('.navbar').removeClass('sticky-top');        
     }
 
     hitpoint = $('#describeSection').scrollTop;
