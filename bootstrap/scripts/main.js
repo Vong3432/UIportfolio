@@ -6,7 +6,7 @@ signupButton.addEventListener('click',()=>{
     window.location.assign('signup.html');
 })
 
-$('.main-section,.describe-section').css('opacity',0);
+$('.main-section,.describe-section .container').css('opacity',0);
 
 nextBtn.addEventListener('click',e=>{
     if( e.target.closest('.main-section') )
@@ -35,9 +35,9 @@ $(window).scroll(function(){
     {
         // $('#functionTabs').addClass('sticky-top');  
         $('.navbar').addClass('sticky-top');                   
-        $('.describe-section').animate({
+        $('.describe-section .container').animate({
             "opacity":"1"
-        },1500)
+        },3000)
         // $('#functionTabs .container').removeClass('py-sm-4');
         // $('#functionTabs .container').addClass('py-sm-2');        
     }
