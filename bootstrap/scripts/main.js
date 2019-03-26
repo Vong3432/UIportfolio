@@ -1,4 +1,10 @@
 const nextBtn = document.getElementById('next-btn');
+const signupButton = document.getElementById('signup-btn');
+
+
+signupButton.addEventListener('click',()=>{
+    window.location.assign('signup.html');
+})
 
 $('.main-section,.describe-section').css('opacity',0);
 

@@ -32,18 +32,62 @@
 }
 
 
-/*  Modify Bootstrap styling */
 
+/*  Modify Bootstrap styling */
+.bg-primary--linear
+{    
+    background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%);
+}
+
+.bg-primary--linear #signup-btn:hover
+{
+    opacity: .7;
+}
+
+.bg-primary--linear button
+{
+    font-weight: bold;
+}
+
+.bg-primary--linear .nav-link
+{
+    opacity: .7;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bg-primary--linear .nav-link:hover
+{
+    transition: opacity 300ms ease-in-out;
+    opacity: 1;
+}
+
+.bg-primary--linear .active .nav-link
+{
+    color: #fff;
+    opacity: 1;
+}
+
+.text-self-secondary
+{
+    color: #e91e63;
+}
 
 .bg-self-secondary
 {
+    opacity: 0.8;
     background-color: #e91e63 !important;
     transition: opacity 300ms ease-in-out;
 }
 
 .bg-self-secondary:hover
 {
-    opacity: 0.7;
+    opacity: 1;
+}
+
+.rounded-radius
+{
+    border-radius: 15px !important;
 }
 
 p,a,span

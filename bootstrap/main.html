@@ -5,25 +5,26 @@
 <link rel="stylesheet" type="text/css" href="style/main.css">   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="d-flex flex-column" id="body">
 
     
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg bg-primary--linear">
 
         <div class="container px-5 py-sm-3 py-md-3 py-lg-2 py-2">
         
-        <a class="navbar-brand text-primary" href="index.html">Chat</a>
+        <a class="navbar-brand text-white" href="main.html">Chat</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <i class="material-icons text-white">&#xe5d2;</i>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav">
             <li class="nav-item active mx-2">
-              <a class="nav-link text-primary" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">Explore others</a>
@@ -45,8 +46,8 @@
             <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> 
           </form>        -->
           <form class="form-inline my-2 my-lg-0 ml-auto mr-1">
-                <button type="button" class="btn btn-light mx-1">Login</button>
-                <button type="button" class="btn btn-primary" id="signup-btn">Sign up</button>
+                <button type="button" class="btn btn-light mx-1 text-black-50">Login</button>
+                <button type="button" class="btn text-white" id="signup-btn">Sign up</button>
            </form>   
         </div>        
 
@@ -64,7 +65,7 @@
               <p class="main__heading text-white">Chat</p>
               <p class="main__paragraph text-white">Clean and effiency social media website.</p>
               <div class="mt-5">
-                  <button class="bg--lg--primary-btn mx-2 my-2" type="submit">Sign up now</button>
+                  <button class="bg--lg--primary-btn mx-2 my-3" type="submit">Sign up now</button>
                   <button class="bg--lg--secondary-btn mx-2" type="submit" id="next-btn">Next</button>
               </div>                         
             </div>
@@ -75,7 +76,7 @@
 
     </div>
 
-    <div class="describe-section py-5 mt-5" id="describeSection">
+    <div class="describe-section py-5 " id="describeSection">
 
             <div class="container px-5 py-sm-5 py-md-5 py-lg-2 py-5">
     
@@ -86,7 +87,7 @@
                     </div>
 
                     <div class="col-12 col-md-5 col-lg-5 main__right">
-                        <h1 class="my-4 main__left__heading text-primary">Clean design</h1>            
+                        <h1 class="my-4 heading--normal text-primary">Clean design</h1>            
                         <p>Our website is build with clean and modern-look design.</p>
                         <!-- <div class="d-flex flex-row my-2">
                             <button class="btn btn-primary" type="submit">Sign up now</button>
@@ -99,19 +100,19 @@
             </div>
     </div>
 
-    <div class="describe-section mt-5 bg-light py-5">
+    <div class="describe-section bg-primary--linear py-5">
 
             <div class="container px-5 py-sm-5 py-md-5 py-lg-2 py-5">
     
-                    <div class="row align-items-center mt-5">
+                    <div class="row align-items-center my-5">
                         
                         <div class="col-4 col-md-4 mx-auto col-lg-4">
                           <img src="images/phone.png" class="leftImage" alt="page image">                                                                           
                         </div>
                         <div class="col-12 col-md-6 col-lg-6 main__right">
-                            <h1 class="my-4 main__right__heading text-primary">Mobile-friendly</h1>            
-                            <p>We use Bootstrap to ensure our website is fully responsive in every device so you can chat with your friends anywhere, anytime.</p>
-                            <button class="bg--lg--secondary-btn my-3" type="submit" id="next-btn">Next</button>           
+                            <h1 class="my-4 heading--normal text-white">Mobile-friendly</h1>            
+                            <p class="text-white">We use Bootstrap to ensure our website is fully responsive in every device so you can chat with your friends anywhere, anytime.</p>
+                            <!-- <button class="bg--lg--secondary-btn my-3" type="submit" id="next-btn">Next</button>            -->
                         </div>    
 
                     </div>
@@ -119,16 +120,57 @@
 
     </div>
 
+    <div class="feature-section bg-light py-5 px-4">
+
+      <div class="container py-lg-0 py-3 rounded-radius">
     
+        <div class="row align-items-around">
+              
+          <div class="col-12 col-md-4 mx-auto pt-4 my-4">
+              <div class="card text-center rounded-radius d-flex flex-column">
+                  <img src="images/dance.svg" class="mt-auto mx-auto feature__card__img" alt="...">
+                  <div class="card-body mb-auto">
+                    <p class="heading--normal">Share your post</p>
+                    <p class="card-text">Write and share your post with ease</p>
+                  </div>
+              </div>
+          </div>
 
+          <div class="col-12 col-md-4 mx-auto pt-4 my-4">
+              <div class="card text-center rounded-radius d-flex flex-column">
+                  <img src="images/connection.svg" class="mt-auto mx-auto feature__card__img" alt="...">
+                  <div class="card-body mb-auto">
+                    <p class="heading--normal">Chat with community</p>
+                    <p class="card-text">Find and chat to the people of the community</p>
+                  </div>
+              </div>
+          </div>
 
-    <footer class="mt-auto d-none">
+          <div class="col-12 col-md-4 mx-auto pt-4 my-4">
+              <div class="card text-center rounded-radius d-flex flex-column">
+                  <img src="images/earnings.svg" class="mt-auto mx-auto feature__card__img" alt="...">
+                  <div class="card-body mb-auto">
+                    <p class="heading--normal">Earn</p>
+                    <p class="card-text">Post and get earned by donating</p>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+<!-- 
+    <footer class="mt-auto">
             <h3>Special thanks to : </h3>
             <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
             Photo by Philippe Toupet on Unsplash
-    </footer>
+            <div>Icons made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" 		    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 		    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer> -->
     
 <!-- scripts -->
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->

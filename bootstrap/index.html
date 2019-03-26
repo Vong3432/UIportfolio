@@ -5,54 +5,55 @@
 <link rel="stylesheet" type="text/css" href="style/index.css">   
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body class="d-flex flex-column" id="body">
 
     
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg bg-primary--linear">
 
-        <div class="container px-5 py-sm-3 py-md-3 py-lg-2 py-2">
+                <div class="container px-5 py-sm-3 py-md-3 py-lg-2 py-2">
+                
+                <a class="navbar-brand text-white" href="main.html">Chat</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons text-white">&#xe5d2;</i>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active mx-2">
+                      <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                      <a class="nav-link" href="#">Explore others</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Activities
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Society</a>
+                        <a class="dropdown-item" href="#">Competition</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-white bg-self-secondary" href="#">Create activities</a>
+                      </div>
+                    </li>            
+                  </ul>
+                  <!-- <form class="form-inline my-2 mb-4 my-lg-0 ml-3 mr-auto">
+                    <input class="searchField" type="search" placeholder="Find friends..." aria-label="Search">
+                    <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> 
+                  </form>        -->
+                  <form class="form-inline my-2 my-lg-0 ml-auto mr-1">
+                        <button type="button" class="btn btn-light mx-1 text-black-50">Login</button>
+                        <button type="button" class="btn text-white" id="signup-btn">Sign up</button>
+                   </form>   
+                </div>        
         
-        <a class="navbar-brand text-primary" href="index.html">Chat</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item active mx-2">
-              <a class="nav-link text-primary" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Explore others</a>
-            </li>
-            <li class="nav-item dropdown mx-2">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Activities
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Society</a>
-                <a class="dropdown-item" href="#">Competition</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item text-white bg-self-secondary" href="#">Create activities</a>
-              </div>
-            </li>            
-          </ul>
-          <!-- <form class="form-inline my-2 mb-4 my-lg-0 ml-3 mr-auto">
-            <input class="searchField" type="search" placeholder="Find friends..." aria-label="Search">
-            <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button> 
-          </form>        -->
-          <form class="form-inline my-2 my-lg-0 ml-auto mr-1">
-                <button type="button" class="btn btn-light mx-1">Login</button>
-                <button type="button" class="btn btn-primary" id="signup-btn">Sign up</button>
-           </form>   
-        </div>        
-
-        </div>
-
-    </nav>
+                </div>
+        
+        </nav>
 
     <!-- thumbnail -->
     <div class="thumbnail-section">
@@ -148,9 +149,9 @@
                             
                         <div class="container mx-auto my-3">
                             <div class="row action-tabs">
-                                <div class="col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2">Like</div>
-                                <div class="col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2">Comment</div>
-                                <div class="col-10 col-md-4 col-lg-3 mx-auto bg-self-secondary text-center text-white py-2 my-2">Donate</div>
+                                <div class="col-10 col-md-3 mx-auto bg-light text-center py-2 my-2">Like</div>
+                                <div class="col-10 col-md-3 mx-auto bg-light text-center py-2 my-2">Comment</div>
+                                <div class="col-10 col-md-3 mx-auto bg-self-secondary text-center text-white py-2 my-2">Donate</div>
                             </div>       
                         </div>    
 
@@ -172,9 +173,9 @@
                                 
                             <div class="container mx-auto my-3">
                                 <div class="row action-tabs">
-                                    <div class="col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2">Like</div>
-                                    <div class="col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2">Comment</div>
-                                    <div class="col-10 col-md-4 col-lg-3 mx-auto bg-self-secondary text-center text-white py-2 my-2">Donate</div>
+                                    <div class="col-10 col-md-3 mx-auto bg-light text-center py-2 my-2">Like</div>
+                                    <div class="col-10 col-md-3 mx-auto bg-light text-center py-2 my-2">Comment</div>
+                                    <div class="col-10 col-md-3 mx-auto bg-self-secondary text-center text-white py-2 my-2">Donate</div>
                                 </div>       
                             </div>   
 
@@ -197,9 +198,9 @@
 
                         <div class="container mx-auto my-3">
                             <div class="row action-tabs">
-                                <div class="col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2">Like</div>
-                                <div class="col-10 col-md-4 col-lg-3 mx-auto bg-light text-center py-2 my-2">Comment</div>
-                                <div class="col-10 col-md-4 col-lg-3 mx-auto bg-self-secondary text-center text-white py-2 my-2">Donate</div>
+                                <div class="col-10 col-md-3 mx-auto bg-light text-center py-2 my-2">Like</div>
+                                <div class="col-10 col-md-3 mx-auto bg-light text-center py-2 my-2">Comment</div>
+                                <div class="col-10 col-md-3 mx-auto bg-self-secondary text-center text-white py-2 my-2">Donate</div>
                             </div>       
                         </div> 
 
