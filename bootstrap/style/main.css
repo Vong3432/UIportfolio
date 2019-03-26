@@ -130,8 +130,7 @@ h1,h2,h3,h4,h5,h6
     background-position: center;
     z-index: -1;
     width: 100%;
-    min-height: 60vh;    
-    height: auto;
+    min-height: inherit;        
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: overlay;
 }
@@ -142,7 +141,7 @@ h1,h2,h3,h4,h5,h6
     z-index: 1;
     position: relative;
     width: 100%;    
-    min-height: 60vh;
+    min-height: 100vh;    
     font-size: 1.2em;
     opacity:0;
 }
@@ -199,7 +198,7 @@ h1,h2,h3,h4,h5,h6
 .describe-section,.feature-section
 {
     font-size: 1.1em;
-    min-height: 30vh;
+    min-height: 50vh;
 }
 
 
