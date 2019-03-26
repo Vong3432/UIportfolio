@@ -7,6 +7,7 @@ signupButton.addEventListener('click',()=>{
 })
 
 $('.main-section,.describe-section .container').css('opacity',0);
+$('.describe-section .container').css('opacity',0.04);
 
 nextBtn.addEventListener('click',e=>{
     if( e.target.closest('.main-section') )
@@ -31,7 +32,7 @@ $(window).scroll(function(){
     // profile.className = 'profile__img';
     // let profile = createSmallProfile('profileIMG','../images/profile.jpg','profile__img');
 
-    if( hitpoint > document.getElementById('describeSection').offsetTop )
+    if( hitpoint > document.getElementById('next-btn').offsetTop )
     {
         // $('#functionTabs').addClass('sticky-top');  
         $('.navbar').addClass('sticky-top');                   
