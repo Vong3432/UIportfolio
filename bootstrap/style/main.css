@@ -373,6 +373,6 @@ h1,h2,h3,h4,h5,h6
 {
     .review-section .card
     {
-        min-height:600px;
+        min-height:500px;
     }
 }
