@@ -338,7 +338,7 @@ h1,h2,h3,h4,h5,h6
 
 .review-section .card .main__heading
 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .review-section .card .card-body
@@ -349,7 +349,7 @@ h1,h2,h3,h4,h5,h6
 .review-section .card .card-body .card-text
 {
     font-family: sourcesanspro;
-    font-size: 1.2em;    
+    font-size: 1.1em;    
     opacity: .8;
     font-style: italic;
 }
@@ -367,4 +367,12 @@ h1,h2,h3,h4,h5,h6
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+@media screen and ( max-width:600px )
+{
+    .review-section .card
+    {
+        min-height:600px;
+    }
 }
