@@ -85,9 +85,44 @@
     opacity: 1;
 }
 
+
+.bg--lg--primary-btn:hover,.bg--lg--secondary-btn:hover
+{
+    filter: brightness(80%);
+    transition: filter 300ms ease-in-out;
+}
+
+.bg--lg--primary-btn
+{
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1.5vh;
+    border-radius: 5px;    
+    font-size: 0.9em;
+    /* background-color: #007bff; */
+    background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);
+    max-width: 150px;
+    width: 100%;
+}
+
+.bg--lg--secondary-btn
+{
+    max-width: 150px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1.5vh;
+    border-radius: 5px;    
+    font-size: 0.8em;
+    background-color: #e91e63;
+}
+
 .rounded-radius
 {
-    border-radius: 15px !important;
+    border-radius: 25px !important;
 }
 
 p,a,span
