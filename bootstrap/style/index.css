@@ -36,7 +36,7 @@
 /*  Modify Bootstrap styling */
 .bg-primary--linear
 {    
-    background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%);
+    background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);
 }
 
 .bg-primary--linear #signup-btn:hover

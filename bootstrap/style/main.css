@@ -35,7 +35,10 @@
 /*  Modify Bootstrap styling */
 .bg-primary--linear
 {    
-    background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%);
+    /* background-color: #2979FF; */
+    /* background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%); */
+    background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);
+    
 }
 
 .bg-primary--linear #signup-btn:hover
@@ -111,8 +114,7 @@ h1,h2,h3,h4,h5,h6
 
 
 .navbar
-{
-    background-color: #fff;
+{    
     z-index: 99;      
     box-shadow: 5px 0px 50px 0 rgba(0,0,0,0.1),
     -5px 0px 50px 0 rgba(0,0,0,0.1);
@@ -138,15 +140,14 @@ h1,h2,h3,h4,h5,h6
     min-height: inherit;   
     will-change:transform;
     /* background-attachment: fixed;      */
-    /* background-color: rgba(0,0,0,0.5); */
-
-    background-blend-mode: overlay;
+    /* background-color: rgba(0,0,0,0.5); */    
 }
 
 .main-section
 {    
     /* background: red;     */   
-    background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%); 
+    /* background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%);  */
+    background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);        
     z-index: 1;
     position: relative;
     width: 100%;    
@@ -185,7 +186,8 @@ h1,h2,h3,h4,h5,h6
     padding: 1.5vh;
     border-radius: 5px;    
     font-size: 0.8em;
-    background-color: #007bff;
+    /* background-color: #007bff; */
+    background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);
     max-width: 150px;
     width: 100%;
 }
@@ -270,11 +272,12 @@ h1,h2,h3,h4,h5,h6
 
 .feature-section .card
 {
+    /* background: #E83036; */
+    background: linear-gradient(320deg, rgb(147, 79, 255) -12.32%, rgba(0, 163, 255, 0.99) 100%);
     border: none;
     height: 350px;
     box-shadow: 0px 5px 50px -5px rgba(0,0,0,.2),
-    0px 25px 45px -5px rgba(0,0,0,.2);    
-    background: linear-gradient(332.69deg, #4EAAED -13.7%, #007BFF 19.23%, rgba(158, 0, 255, 0.74) 135.08%);
+    0px 25px 45px -5px rgba(0,0,0,.2);        
 }
 
 .feature-section .card .card-body
