@@ -180,11 +180,27 @@ h1,h2,h3,h4,h5,h6
 }
 
 
-.bg--lg--primary-btn:hover,.bg--lg--secondary-btn:hover
+.bg--lg--primary-btn:hover,.bg--lg--secondary-btn:hover,.bg--primary-btn:hover,.bg--secondary-btn:hover
 {
     filter: brightness(80%);
     transition: filter 300ms ease-in-out;
 }
+
+.bg--primary-btn
+{
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1.5vh 1vh;
+    border-radius: 5px;    
+    font-size: 0.7em;
+    /* background-color: #007bff; */
+    background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);
+    max-width: 100px;
+    width: 100%;
+}
+
 
 .bg--lg--primary-btn
 {
@@ -199,6 +215,19 @@ h1,h2,h3,h4,h5,h6
     background: linear-gradient(270deg, #A56FFD -12.32%, rgba(0, 163, 255, 0.99) 100%);
     max-width: 150px;
     width: 100%;
+}
+
+.bg--secondary-btn
+{
+    max-width: 120px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1vh;
+    border-radius: 5px;    
+    font-size: 0.8em;
+    background-color: #e91e63;
 }
 
 .bg--lg--secondary-btn
@@ -221,7 +250,7 @@ h1,h2,h3,h4,h5,h6
 }
 
 
-.describe-section,.feature-section
+.describe-section,.feature-section,.review-section
 {
     z-index:2;
     font-size: 1.1em;
@@ -274,17 +303,13 @@ h1,h2,h3,h4,h5,h6
     color: #fff;
 }
 
-.test{
-    /* background: linear-gradient(334.22deg, #007BFF 6.49%, #FF00D6 110.41%); */
-    
-}
 
 .feature-section .card
 {
     /* background: #E83036; */
     background: linear-gradient(320deg, rgb(147, 79, 255) -12.32%, rgba(0, 163, 255, 0.99) 100%);
     border: none;
-    height: 400px;
+    height: 350px;
     box-shadow: 0px 5px 50px -5px rgba(0,0,0,.2),
     0px 25px 45px -5px rgba(0,0,0,.2);        
 }
@@ -298,6 +323,47 @@ h1,h2,h3,h4,h5,h6
 {
     max-width: 70px;
     max-height: 70px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.review-section .card
+{
+    min-height: 400px;
+    border: none;
+    box-shadow: 5px 0 50px 0 rgba(0,0,0,.125),
+    -5px 0 50px 0 rgba(0,0,0,.125);
+}
+
+.review-section .card .main__heading
+{
+    font-size: 2.5em;
+}
+
+.review-section .card .card-body
+{
+    flex: none;
+}
+
+.review-section .card .card-body .card-text
+{
+    font-family: sourcesanspro;
+    font-size: 1.2em;    
+    opacity: .8;
+    font-style: italic;
+}
+
+.review-section .card .card-body .bg--primary-btn
+{
+    /* font-size: .7em; */
+}
+
+.review--card__img
+{
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
     object-fit: cover;
     width: 100%;
     height: 100%;
